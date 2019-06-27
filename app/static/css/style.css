@@ -1,0 +1,35 @@
+body{
+    display: grid;
+    grid-template-areas:'nav nav nav nav'
+                        'header header header header'
+                        'projeto projeto projeto projeto'
+                        'cadastro cadastro cadastro cadastro'
+                        'pilares pilares pilares pilares'
+                        'footer footer footer footer';
+    grid-template-rows: 15vh 85vh 90vh 90vh 90vh 30vh; 
+    margin: 0;
+}
+nav{
+    background-color: red;
+    grid-area: nav;
+}
+header{
+    background-color: yellow;
+    grid-area: header;
+}
+#projeto{
+    background-color: blue;
+    grid-area: projeto;
+}
+#cadastro{
+    background-color: green;
+    grid-area: cadastro;
+}
+#pilares{
+    background-color: purple;
+    grid-area: pilares;
+}
+footer{
+    background-color: pink;
+    grid-area: footer;
+}
