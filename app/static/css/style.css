@@ -1,22 +1,48 @@
+*{
+    scroll-behavior: smooth;
+}
 body{
     display: grid;
-    grid-template-areas:'nav nav nav nav'
+    grid-template-areas:
                         'header header header header'
                         'projeto projeto projeto projeto'
                         'cadastro cadastro cadastro cadastro'
                         'pilares pilares pilares pilares'
                         'footer footer footer footer';
-    grid-template-rows: 15vh 85vh 90vh 90vh 90vh 30vh; 
+    grid-template-rows:  100vh 90vh 90vh 90vh 30vh; 
     margin: 0;
 }
-nav{
-    background-color: red;
-    grid-area: nav;
-}
+
 header{
     background-color: yellow;
     grid-area: header;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url("/static/imagens/pessoas.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    font-size: 18pt;
+    font-weight: 500;
+    font-family: 'Ubuntu', sans-serif;
 }
+header nav ul {	
+    display: flex; 	
+    justify-content: flex-end;
+    align-items: center;	
+    list-style-type: none;	
+}
+header a {	
+    text-decoration: none;	
+    color: white;	
+    font-size: 18pt;
+    font-weight: 500;
+    font-family: 'Ubuntu', sans-serif;
+}	
+
+ header a:hover {	
+    font-size: 20pt;	
+}	
 #projeto{
     background-color: blue;
     grid-area: projeto;
@@ -33,3 +59,40 @@ footer{
     background-color: pink;
     grid-area: footer;
 }
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+#boxSize{
+    width: 200px;
+}
+#navPrincipal{
+    width: 100%;
+}
+#octopusLogo{
+    margin-left: 30px;
+    margin-top: 10px;
+}
+#octopus{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-left: 100px;
+    color: white;
+    font-weight: 500;
+}
+#text{
+    width: 300px;
+    text-align: justify;
+    font-size: 12pt;
+}
+.fixedMenu{
+    position: fixed;	
+    top: 0px;	
+    width: 100%;	
+    height: auto;	
+    z-index: 100;
+    background: rgba(255, 191, 55, 0.7);
+}	
