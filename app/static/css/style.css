@@ -14,38 +14,95 @@ body{
 }
 
 header{
-    background-color: yellow;
-    grid-area: header;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     background-image: url("/static/imagens/pessoas.png");
     background-repeat: no-repeat;
     background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Ubuntu', sans-serif;
     font-size: 18pt;
     font-weight: 500;
-    font-family: 'Ubuntu', sans-serif;
+    grid-area: header;
+    justify-content: space-between;
 }
 header nav ul {	
+    align-items: center;	
     display: flex; 	
     justify-content: flex-end;
-    align-items: center;	
     list-style-type: none;	
 }
 header a {	
-    text-decoration: none;	
     color: white;	
+    font-family: 'Ubuntu', sans-serif;
     font-size: 18pt;
     font-weight: 500;
-    font-family: 'Ubuntu', sans-serif;
+    text-decoration: none;	
 }	
 
  header a:hover {	
     font-size: 20pt;	
 }	
 #projeto{
-    background-color: blue;
+    align-items: center;
+    display: flex;
+    justify-content: center;
     grid-area: projeto;
+}
+#largura-projeto{
+    display: grid;
+    grid-template-areas:'titulo titulo titulo titulo'
+                        'img img img img';
+    grid-template-rows: 10% 90%;
+    height: 95%;
+    width: 90%;
+}
+#titulo-projeto{
+    grid-area: titulo;
+    width: 95%;
+}
+#titulo-projeto aside{
+    border-left: 3px solid #2674A8;
+    padding-left: 10px;
+}
+#titulo-projeto h2{
+    color: #ffbf37;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 100;
+    margin: 0;
+}
+#como-funciona-projeto{
+    display: flex;
+    font-family: 'Ubuntu', sans-serif;
+    grid-area: img;
+    justify-content: space-between;
+}
+#img-projeto{
+    align-items: flex-end;
+    background-color: rgb(255, 214, 34);
+    display: flex;
+    justify-content: center;
+    width: 35%;
+}
+#txt-projeto{
+    text-align: initial;
+    width: 60%;
+}
+#txt-projeto h2{
+    color: #ffbf37;
+    margin: 0;
+}
+#imgs-passo-a-passo{
+    display: flex;
+    justify-content: space-between;
+}
+#imgs-passo-a-passo aside h3{
+    color: #ffbf37;
+    text-align: center;
+    margin: 0;
+}
+#imgs-passo-a-passo img{
+    margin: 10px 0 10px 0;
+    width: 110px;
 }
 #cadastro{
     background-color: green;
@@ -56,12 +113,27 @@ header a {
     grid-area: pilares;
 }
 footer{
-    background-color: pink;
+    align-items: center;
+    background-color: #ffbf37;
+    color: white;
+    display: flex;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
     grid-area: footer;
+    justify-content: space-around;
 }
-#navbar{
+#sociais{
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    width: 150px;
+}
+#sociais img{
+    width: 40px;
+}
+#navbar{
+    align-items: center;
+    display: flex;
     justify-content: space-between;
 
 }
@@ -76,23 +148,23 @@ footer{
     margin-top: 10px;
 }
 #octopus{
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    margin-left: 100px;
     color: white;
+    display: flex;
     font-weight: 500;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 100px;
 }
 #text{
-    width: 300px;
-    text-align: justify;
     font-size: 12pt;
+    text-align: justify;
+    width: 300px;
 }
 .fixedMenu{
+    background: rgba(255, 191, 55, 0.7);
+    height: auto;	
     position: fixed;	
     top: 0px;	
     width: 100%;	
-    height: auto;	
     z-index: 100;
-    background: rgba(255, 191, 55, 0.7);
-}	
+}
