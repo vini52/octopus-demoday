@@ -105,9 +105,56 @@ header a {
     width: 110px;
 }
 #cadastro{
-    background-color: green;
+    background-image: url(/static/imagens/vida.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-color: white;
     grid-area: cadastro;
+    display: flex;
+    margin: 10px;
 }
+section#esquerda{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px; /*Gambiarra */
+    margin-bottom: 70px; /*Gambiarra */
+    width: 450px;
+    border-right: 1px solid lightgrey;
+    padding-right: 15px;
+}
+
+section div#or h1{
+    color: gray;
+    font-size: 8pt;
+    text-align: center;
+
+}
+
+section span{
+    font-family: 'Ubuntu', sans-serif;
+    color: #2674A8;
+    font-size: 20pt;
+    margin-left: 30px;
+    padding-left: 25px;
+}
+section div{
+    font-family: 'Ubuntu', sans-serif;
+    color: #ffbf37;
+}
+
+section div#or{
+   border-radius: 50%;
+   background-color: white;
+   margin-left: 480px; /*Gambiarra */
+   width: 80px; 
+   height: 30px;
+}
+
+aside#direita{
+    width: 600px;
+}
+
 #pilares{
     background-color: purple;
     grid-area: pilares;
