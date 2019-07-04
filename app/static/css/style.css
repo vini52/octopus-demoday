@@ -14,6 +14,7 @@ body{
 }
 
 header{
+    background-attachment: fixed;
     background-image: url("/static/imagens/pessoas.png");
     background-repeat: no-repeat;
     background-size: 100%;
@@ -39,8 +40,9 @@ header a {
     text-decoration: none;	
 }	
 
- header a:hover {	
-    font-size: 20pt;	
+header a:hover {	
+    color: #2674A8;
+    transition: 0.3s;
 }	
 #projeto{
     align-items: center;
@@ -105,13 +107,12 @@ header a {
     width: 110px;
 }
 #cadastro{
-    background-image: url(/static/imagens/vida.jpg);
+    background-image: url(/static/imagens/vida.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-color: white;
     grid-area: cadastro;
     display: flex;
-    margin: 10px;
 }
 section#esquerda{
     display: flex;
@@ -191,6 +192,7 @@ footer{
     width: 100%;
 }
 #octopusLogo{
+    width: 50px;
     margin-left: 30px;
     margin-top: 10px;
 }
@@ -208,10 +210,11 @@ footer{
     width: 300px;
 }
 .fixedMenu{
-    background: rgba(255, 191, 55, 0.7);
+    background: #ffbf37;
     height: auto;	
     position: fixed;	
-    top: 0px;	
+    top: 0px;
+    transition: 0.7s;
     width: 100%;	
     z-index: 100;
 }
