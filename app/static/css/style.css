@@ -113,46 +113,39 @@ header a:hover {
     grid-area: cadastro;
     display: flex;
 }
-section#esquerda{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 70px; /*Gambiarra */
-    margin-bottom: 70px; /*Gambiarra */
-    width: 450px;
-    border-right: 1px solid lightgrey;
-    padding-right: 15px;
+.esquerda{
+    width: 50%;
+    height: 100%;
+    /* background-color: red; */
 }
-
-section div#or h1{
-    color: gray;
-    font-size: 8pt;
-    text-align: center;
-
+.or{
+    width: 3%;
+    height: 70%;
+    margin-top: 6%;
+    /* background-color: black; */
 }
-
-section span{
-    font-family: 'Ubuntu', sans-serif;
-    color: #2674A8;
-    font-size: 20pt;
-    margin-left: 30px;
-    padding-left: 25px;
+.or img{
+    width: 45px;
+    height: 400px;
 }
-section div{
-    font-family: 'Ubuntu', sans-serif;
+.direita{
+    width: 50%;
+    height: 100%;
+    /* background-color: yellow; */
+}
+.esquerda, .direita h1{
     color: #ffbf37;
+    font-family: 'Ubuntu', sans-serif;
 }
-
-section div#or{
-   border-radius: 50%;
-   background-color: white;
-   margin-left: 480px; /*Gambiarra */
-   width: 80px; 
-   height: 30px;
+.direita span{
+    padding-left: 10%;
+    padding-right: 1%;
+    color: #2674A8;
 }
-
-aside#direita{
-    width: 600px;
+.esquerda span{
+    padding-left: 10%;
+    padding-right: 1%;
+    color: #2674A8;
 }
 
 #pilares{
