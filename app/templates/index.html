@@ -1,17 +1,6 @@
+{% extends 'layout.html' %}
 {% load staticfiles %}
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="shortcut icon" href="{% static 'icones/octopus.png' %}" type="image/x-icon">
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
-    <script defer src="{% static 'js/script.js' %}"></script>
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
-    <title>Octopus</title>
-</head>
-<body>
+{% block content %}
     <header id="header">
         <div id="navPrincipal" >
             <nav>
@@ -24,7 +13,7 @@
                     <ul>
                         <li>
                             <div id="boxSize">
-                                <a id="oProjeto" href="#header">
+                                <a id="oProjeto" href="#">
                                     HOME
                                 </a>
                             </div>
@@ -39,7 +28,7 @@
                         <li>
                             <div id="boxSize">
                                 <a id="" href="#cadastro">
-                                    CADASTRO
+                                    ENTRAR
                                 </a>
                             </div>
                         </li>
@@ -71,7 +60,7 @@
             </div>
             <div id="como-funciona-projeto">
                 <div id="img-projeto">
-                    <img src="{% static 'imagens/mockup1.png' %}" alt="">
+                    <img src="{% static 'imagens/smartphone.png' %}" alt="">
                 </div>
                 <div id="txt-projeto">
                     <h2>Como funciona?</h2>
@@ -117,29 +106,4 @@
     <section id="pilares">
         
     </section>
-    <footer>
-        <div id="endereco">
-            <p>ENDEREÇO</p>
-            <p>Estação Hack</p>
-            <p>Av. Paulista, 1374 - Bela Vista,</p>
-            <p>São Paulo - SP, 01310-100</p>
-        </div>
-        <div id="contato">
-            <p>CONTATO</p>
-            <p>+55 11 95288-2296 | +55 11 95196-6416</p>
-            <p>+55 11 96661-5470 | +55 11 94508-5115</p>
-            <p>octopus@octopus.com.br</p>
-        </div>
-        <div id="atendimento">
-            <p>ATENDIMENTO</p>
-            <p>Seg à Sex das 9h às 21h</p>
-            <p>Sab das 9h às 13h</p>
-        </div>
-        <div id="sociais">
-            <a href=""><img src="{% static 'icones/instagram.png' %}" alt=""></a>
-            <a href=""><img src="{% static 'icones/face.png' %}" alt=""></a>
-            <a href=""><img src="{% static 'icones/linkedin.png' %}" alt=""></a>
-        </div>
-    </footer>
-</body>
-</html>
+{% endblock %}
