@@ -105,47 +105,92 @@ header a:hover {
     margin: 10px 0 10px 0;
     width: 110px;
 }
+
 #cadastro{
+    grid-area: cadastro;
+    display: grid;
+    grid-template-areas: 'navi navi navi navi'
+                         'template1 template1 template1 template1';
+    grid-template-rows: 8vh 90vh;
     background-image: url(/static/imagens/vida.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    background-color: white;
-    grid-area: cadastro;
+    background-attachment: fixed;
+}
+.navi{
+    grid-area: navi; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Ubuntu', sans-serif;
+    color: #ffbf37;
+    padding-inline-end: 42%;
+    padding-inline-start: 5%;
+}
+.navi span{
+    color: #2674A8;
+}
+.template1{
+    grid-area: template1;
     display: flex;
 }
 .esquerda{
-    width: 50%;
+    width: 45%;
     height: 100%;
-    /* background-color: red; */
 }
 .or{
-    width: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 5%;
     height: 70%;
-    margin-top: 6%;
-    /* background-color: black; */
+    margin-top: 4.5%;
 }
 .or img{
     width: 45px;
     height: 400px;
 }
 .direita{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     width: 50%;
     height: 100%;
-    /* background-color: yellow; */
 }
-.esquerda, .direita h1{
-    color: #ffbf37;
-    font-family: 'Ubuntu', sans-serif;
+.user{
+    border: 1px solid #2674A8;
+    width: 45%;
+    height: 4.5%;
+    margin-bottom: 2%;
+    border-radius: 10px 10px 10px;
+    background-color: rgba(0,0,0,0.5);
+    background-image: url(/static/icones/user.png);
+    background-size: 4% auto;
+    background-repeat: no-repeat;
+    background-position: left 5px top 5.5px;
 }
-.direita span{
-    padding-left: 10%;
-    padding-right: 1%;
-    color: #2674A8;
+.senha{
+    border: 1px solid #2674A8;
+    width: 45%;
+    height: 4.5%;
+    margin-bottom: 2%;
+    border-radius: 10px 10px 10px;
+    background-color: rgba(0,0,0,0.5);
+    background-image: url(/static/icones/lock.png);
+    background-size: 4% auto;
+    background-repeat: no-repeat;
+    background-position: left 5px top 5.5px;
 }
-.esquerda span{
-    padding-left: 10%;
-    padding-right: 1%;
-    color: #2674A8;
+.botao{
+    border: none;
+    color: white;
+    background-color: #2674A8;
+    cursor: pointer;
+    margin-top: 2%;
+    width: 15%;
+    height: 5%;
+    border-radius: 10px 10px 10px;
 }
 
 #pilares{
