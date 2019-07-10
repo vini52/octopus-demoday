@@ -196,8 +196,12 @@ header a:hover {
 #pilares{
     background-color: white;
     grid-area: pilares;
+    
+}
+.pilares{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
 }
 footer{
     align-items: center;
