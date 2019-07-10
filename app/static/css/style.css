@@ -194,8 +194,10 @@ header a:hover {
 }
 
 #pilares{
-    background-color: purple;
+    background-color: white;
     grid-area: pilares;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 footer{
     align-items: center;
