@@ -113,9 +113,10 @@ header a:hover {
                          'template1 template1 template1 template1';
     grid-template-rows: 8vh 90vh;
     background-image: url(/static/imagens/vida.png);
-    background-size: 100% 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+
 }
 .navi{
     grid-area: navi; 
