@@ -26,7 +26,7 @@ header{
     grid-area: header;
     justify-content: space-between;
 }
-.lista {	
+header nav ul {	
     align-items: center;	
     display: flex; 	
     justify-content: flex-end;
