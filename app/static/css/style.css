@@ -148,24 +148,24 @@ header a:hover {
 }
 
 #cadastro{
-    grid-area: cadastro;
+    background-attachment: fixed;
+    background-image: url(/static/imagens/vida.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     display: grid;
+    grid-area: cadastro;
     grid-template-areas: 'navi navi navi navi'
                          'template1 template1 template1 template1';
     grid-template-rows: 8vh 90vh;
-    background-image: url(/static/imagens/vida.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
 
 }
 .navi{
-    grid-area: navi; 
-    display: flex;
     align-items: center;
-    justify-content: space-between;
-    font-family: 'Ubuntu', sans-serif;
     color: #ffbf37;
+    display: flex;
+    font-family: 'Ubuntu', sans-serif;
+    grid-area: navi; 
+    justify-content: space-between;
     padding-inline-end: 42%;
     padding-inline-start: 5%;
 }
@@ -193,48 +193,72 @@ header a:hover {
     height: 400px;
 }
 .direita{
-    display: flex;
     align-items: center;
-    justify-content: center;
+    display: flex;
     flex-direction: column;
-    width: 50%;
+    justify-content: center;
     height: 100%;
+    width: 50%;
 }
-.user{
-    border: 1px solid #2674A8;
-    width: 45%;
-    height: 4.5%;
-    margin-bottom: 2%;
-    border-radius: 10px 10px 10px;
+#form-login{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+#icone-input{
+    display: flex;
+}
+#img-input{
+    align-items: center;
     background-color: rgba(0,0,0,0.5);
-    background-image: url(/static/icones/user.png);
-    background-size: 4% auto;
-    background-repeat: no-repeat;
-    background-position: left 5px top 5.5px;
-}
-.senha{
+    border-radius: 20px 0 0 20px;
     border: 1px solid #2674A8;
-    width: 45%;
-    height: 4.5%;
-    margin-bottom: 2%;
-    border-radius: 10px 10px 10px;
-    background-color: rgba(0,0,0,0.5);
-    background-image: url(/static/icones/lock.png);
-    background-size: 4% auto;
-    background-repeat: no-repeat;
-    background-position: left 5px top 5.5px;
+    border-right: none;
+    display: flex;
+    justify-content: center;
+    height: 27px;
+    width: 27px;
 }
-.botao{
+#img-input img{
+    width: 12px;
+}
+.input-entrar{
+    background-color: rgba(0,0,0,0.5);
     border: none;
+    border-radius: 0 20px 20px 0;
+    border: 1px solid #2674A8;
+    border-left: none;
     color: white;
-    background-color: #2674A8;
-    cursor: pointer;
-    margin-top: 2%;
-    width: 15%;
-    height: 5%;
-    border-radius: 10px 10px 10px;
+    height: 25px;
+    margin-bottom: 5px;
+    width: 280px;
 }
-
+.input-entrar:focus{
+    outline: 0;
+}
+#checkbox-form{
+    color: white;
+    display: flex;
+    font-family: 'Ubuntu', sans-serif;
+    justify-content: space-between;
+}
+#checkbox-form a{
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    text-decoration: none;
+}
+#botao{
+    background-color: #2674A8;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 14pt;
+    height: 30px;
+    margin-top: 5px;
+    width: 110px;
+}
 #pilares{
     align-items: center;
     display: flex;

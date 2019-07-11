@@ -104,9 +104,23 @@
         </div>
         
         <div class="direita">
-            <input type="text" class="user">
-            <input type="text" class="senha">
-            <input type="submit" class="botao" value="Login">
+            <div id="form-login">
+                <form action="POST">
+                    <div id="icone-input">
+                        <div id="img-input"><img src="{% static 'icones/user.png' %}" alt=""></div> <input type="text" id="user" class="input-entrar" placeholder="Digite seu email...">
+                    </div>
+                    <div id="icone-input">
+                            <div id="img-input"><img src="{% static 'icones/lock.png' %}" alt=""></div> <input type="password" id="senha" class="input-entrar" placeholder="Digite sua senha...">
+                        </div>
+                    <div id="checkbox-form">
+                        <div>
+                            <input type="checkbox" name="" id="check-lembrar"><label for="check-lembrar">Lembrar-me</label>
+                        </div>
+                        <a href="#">Esqueceu a senha?</a>
+                    </div>
+                    <input type="submit" id="botao" value="Login">
+                </form>
+            </div>
         </div>
     </div>
 </section>
