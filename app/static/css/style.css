@@ -176,8 +176,66 @@ header a:hover {
     display: flex;
 }
 .esquerda{
-    width: 45%;
+    align-items: center;
+    display: flex;
     height: 100%;
+    justify-content: center;
+    width: 45%;
+}
+#botoes-login{
+    display: flex;
+    flex-direction: column;
+    height: 85px;
+    justify-content: space-between;
+}
+.btn-login{
+    box-shadow: 1px 1px 5px black;
+    border-radius: 20px;
+    cursor: pointer;
+    display: flex;
+    height: 32px;
+    width: 250px;
+}
+.img-btn-class{
+    align-items: center;
+    border-radius: 20px 0 0 20px;
+    display: flex;
+    height: 32px;
+    justify-content: center;
+    width: 100px;
+}
+#img-btn-face{
+    background-color: #4266b2;
+}
+#img-btn-google{
+    background-color: #df493b;
+}
+.img-btn-class img{
+    width: 26px;
+}
+#btn-face{
+    background-color: #4266b2;
+    border-radius: 0 20px 20px 0;
+    color: white;
+    cursor: pointer;
+    font-family: 'Ubuntu', sans-serif;
+    width: 250px;
+}
+#btn-face span{
+    font-weight: bold;
+}
+.btn-border{
+    border-radius: 0 20px 20px 0;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    width: 250px;
+}
+#btn-google{
+    background-color: #df493b;
+    cursor: pointer;
+}
+#botoes-login button{
+    border: none;
 }
 .or{
     display: flex;
@@ -198,11 +256,6 @@ header a:hover {
     justify-content: center;
     height: 100%;
     width: 50%;
-}
-#form-login{
-    align-items: center;
-    display: flex;
-    justify-content: center;
 }
 #icone-input{
     display: flex;
@@ -246,6 +299,9 @@ header a:hover {
     font-family: 'Ubuntu', sans-serif;
     text-decoration: none;
 }
+#checkbox-form a:hover{
+    text-decoration: underline;
+}
 #botao{
     background-color: #2674A8;
     border: none;
@@ -257,6 +313,15 @@ header a:hover {
     height: 30px;
     margin-top: 5px;
     width: 110px;
+}
+#botao:hover{
+    background-color: #2b84bf;
+    transition: 0.6s;
+}
+#center-button{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
 }
 #pilares{
     align-items: center;

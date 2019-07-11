@@ -96,7 +96,16 @@
     
     <div class="template1">
         <div class="esquerda">
-
+            <div id="botoes-login">
+                <div class="btn-login">
+                    <div id="img-btn-face" class="img-btn-class"><img src="{% static 'icones/face.png' %}" alt=""></div>
+                    <button id="btn-face">Entrar com o <span>facebook</span></button>
+                </div>
+                <div class="btn-login">
+                    <div id="img-btn-google" class="img-btn-class"><img src="{% static 'icones/google-plus.png' %}" alt=""></div>
+                    <button id="btn-google" class="btn-border">Entrar com o Google+</button>
+                </div>
+            </div>
         </div>
         
         <div class="or">
@@ -118,7 +127,7 @@
                         </div>
                         <a href="#">Esqueceu a senha?</a>
                     </div>
-                    <input type="submit" id="botao" value="Login">
+                    <div id="center-button"><input type="submit" id="botao" value="Login"></div>
                 </form>
             </div>
         </div>
