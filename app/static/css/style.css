@@ -153,10 +153,29 @@ header a:hover {
     background-size: cover;
     display: grid;
     grid-area: cadastro;
-    grid-template-areas: 'navi navi navi navi'
-                         'template1 template1 template1 template1';
-    grid-template-rows: 8vh 90vh;
-
+    grid-template-areas:'navi navi navi navi'
+                        'cadastrar cadastrar cadastrar cadastrar'
+                        'template1 template1 template1 template1';
+    grid-template-rows: 8vh 4vh 90vh;
+}
+#cadastrar{
+    display: flex;
+    grid-area: cadastrar;
+    justify-content: center;
+}
+#cadastrar p{
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+}
+#cadastrar a{
+    color: #ffbf37;
+    font-family: 'Ubuntu', sans-serif;
+    margin-left: 5px;
+    text-decoration: none;
+}
+#cadastrar a:hover{
+    text-decoration: underline;
 }
 .navi{
     align-items: center;
