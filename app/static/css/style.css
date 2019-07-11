@@ -9,7 +9,7 @@ body{
                         'cadastro cadastro cadastro cadastro'
                         'pilares pilares pilares pilares'
                         'footer footer footer footer';
-    grid-template-rows:  100vh 90vh 90vh 90vh 30vh; 
+    grid-template-rows:  100vh 100vh 100vh 100vh 30vh; 
     margin: 0;
 }
 
@@ -43,7 +43,48 @@ header a {
 header a:hover {	
     color: #2674A8;
     transition: 0.3s;
-}	
+}
+#navbar{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+
+}
+#boxSize{
+    display: flex;
+    justify-content: center;
+    width: 200px;
+}
+#navPrincipal{
+    width: 100%;
+}
+#octopusLogo{
+    width: 50px;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+#octopus{
+    color: white;
+    display: flex;
+    font-weight: 500;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 100px;
+}
+#text{
+    font-size: 12pt;
+    text-align: justify;
+    width: 300px;
+}
+.fixedMenu{
+    background: #ffbf37;
+    height: auto;	
+    position: fixed;	
+    top: 0px;
+    transition: 1s;
+    width: 100%;	
+    z-index: 100;
+}
 #projeto{
     align-items: center;
     display: flex;
@@ -195,14 +236,45 @@ header a:hover {
 }
 
 #pilares{
-    background-color: white;
+    align-items: center;
+    display: flex;
+    justify-content: center;
     grid-area: pilares;
-    
+}
+#largura-pilares{
+    display: grid;
+    grid-template-areas:'titulo-pilares titulo-pilares titulo-pilares titulo-pilares'
+                        'pilares pilares pilares pilares';
+    grid-template-rows: 10% 90%;
+    height: 95%;
+    width: 95%;
+}
+#titulo-pilares{
+    grid-area: titulo-pilares;
+    width: 95%;
+}
+#titulo-pilares aside{
+    border-left: 3px solid #2674A8;
+    padding-left: 10px;
+}
+#titulo-pilares h2{
+    color: #ffbf37;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 100;
+    margin: 0;
 }
 .pilares{
     display: grid;
+    grid-area: pilares;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+}
+.pilar{
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+}
+.pilar img{
+    width: 28%;
 }
 footer{
     align-items: center;
@@ -222,45 +294,4 @@ footer{
 }
 #sociais img{
     width: 40px;
-}
-#navbar{
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-
-}
-#boxSize{
-    display: flex;
-    justify-content: center;
-    width: 200px;
-}
-#navPrincipal{
-    width: 100%;
-}
-#octopusLogo{
-    width: 50px;
-    margin-left: 30px;
-    margin-top: 10px;
-}
-#octopus{
-    color: white;
-    display: flex;
-    font-weight: 500;
-    flex-direction: column;
-    justify-content: flex-start;
-    margin-left: 100px;
-}
-#text{
-    font-size: 12pt;
-    text-align: justify;
-    width: 300px;
-}
-.fixedMenu{
-    background: #ffbf37;
-    height: auto;	
-    position: fixed;	
-    top: 0px;
-    transition: 0.7s;
-    width: 100%;	
-    z-index: 100;
 }
