@@ -204,7 +204,7 @@ header a:hover {
 #botoes-login{
     display: flex;
     flex-direction: column;
-    height: 85px;
+    height: 56px;
     justify-content: space-between;
 }
 .btn-login{
@@ -212,14 +212,14 @@ header a:hover {
     border-radius: 20px;
     cursor: pointer;
     display: flex;
-    height: 32px;
+    height: 25px;
     width: 250px;
 }
 .img-btn-class{
     align-items: center;
     border-radius: 20px 0 0 20px;
     display: flex;
-    height: 32px;
+    height: 25px;
     justify-content: center;
     width: 100px;
 }
@@ -230,7 +230,7 @@ header a:hover {
     background-color: #df493b;
 }
 .img-btn-class img{
-    width: 26px;
+    width: 20px;
 }
 #btn-face{
     background-color: #4266b2;
