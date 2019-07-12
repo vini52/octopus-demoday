@@ -14,18 +14,39 @@
 </head>
 <body>
     <nav>
-                
+        <div>
+            <img src="{% static 'icones/logo2.png' %}" alt="">
+        </div>
+        <div id="pontuacao">
+            <div>
+                <p id="nome-user">Fulano de Tal</p>
+                <p id="pontos">516 pontos</p>
+            </div>
+            <div>
+                <img src="{% static 'icones/usuario.png' %}" alt="" id="img-user">
+            </div>
+        </div>        
     </nav>
-    <div>
-
+    <div id="links">
+        <div>
+            <a href="#">Missões</a>
+            <a href="#">Medalhas</a>
+            <a href="#">Buscar Ajuda</a>
+        </div>
     </div>
     <section id="missoes">
+        <div class="conteudo">
 
+        </div>
     </section>
     <section id="medalhas">
+        <div class="conteudo">
 
+        </div>
     </section>
     <section id="ajuda">
+        <div class="conteudo">
 
+        </div>
     </section>
 {% endblock %}

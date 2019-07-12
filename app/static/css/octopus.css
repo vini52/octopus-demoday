@@ -1,5 +1,7 @@
 body{
+    background-color: #e9e9e9;
     display: grid;
+    font-family: 'Ubuntu', sans-serif;
     grid-template-areas:'nav nav nav nav'
                         'div div div div'
                         'missoes missoes missoes missoes'
@@ -10,19 +12,72 @@ body{
     margin: 0;
 }
 nav{
+    align-items: center;
+    background-color: #ffbf37;
+    display: flex;
     grid-area: nav;
+    justify-content: space-between;
+    padding: 0 25px 0 25px;
 }
-div{
+nav p{
+    color: white;
+    margin: 0;
+}
+#pontuacao{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 165px;
+}
+#nome-user{
+    font-weight: bold;
+}
+#pontos{
+    font-size: 11pt;
+    text-align: end;
+}
+#img-user{
+    width: 50px;
+}
+#links{
+    align-items: center;
+    background-color: white;
+    display: flex;
     grid-area: div;
+    justify-content: center;
+}
+#links a{
+    color: #2674A8;
+    text-decoration: none;    
+}
+#links div{
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
 }
 #missoes{
+    align-items: center;
+    display: flex;
     grid-area: missoes;
+    justify-content: center;
+}
+.conteudo{
+    background-color: white;
+    border-radius: 20px;
+    height: 90%;
+    width: 90%;
 }
 #medalhas{
+    align-items: center;
+    display: flex;
     grid-area: medalhas;
+    justify-content: center;
 }
 #ajuda{
+    align-items: center;
+    display: flex;
     grid-area: ajuda;
+    justify-content: center;
 }
 footer{
     align-items: center;
