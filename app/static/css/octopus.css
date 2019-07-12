@@ -8,7 +8,7 @@ body{
                         'medalhas medalhas medalhas medalhas'
                         'ajuda ajuda ajuda ajuda'
                         'footer footer footer footer';
-    grid-template-rows: 76px 8vh 80vh 80vh 80vh 30vh;
+    grid-template-rows: 76px 8vh 90vh 90vh 90vh 30vh;
     margin: 0;
 }
 nav{
