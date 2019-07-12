@@ -100,3 +100,15 @@ footer{
 #sociais img{
     width: 40px;
 }
+::-webkit-scrollbar{
+    background-color: #ffbf37;
+    width: 8px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #ffbf37;
+    border-radius: 5px;
+}
+::-webkit-scrollbar-track{
+    background-color: #2674A8;
+    border-radius: 5px;
+}
