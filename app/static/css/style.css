@@ -253,6 +253,10 @@ header a:hover {
     background-color: #df493b;
     cursor: pointer;
 }
+#btn-google span{
+    font-weight: bold;
+}
+
 #botoes-login button{
     border: none;
 }
