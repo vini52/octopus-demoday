@@ -1,0 +1,47 @@
+body{
+    display: grid;
+    grid-template-areas:'nav nav nav nav'
+                        'div div div div'
+                        'missoes missoes missoes missoes'
+                        'medalhas medalhas medalhas medalhas'
+                        'ajuda ajuda ajuda ajuda'
+                        'footer footer footer footer';
+    grid-template-rows: 76px 8vh 80vh 80vh 80vh 30vh;
+    margin: 0;
+}
+nav{
+    grid-area: nav;
+}
+div{
+    grid-area: div;
+}
+#missoes{
+    grid-area: missoes;
+}
+#medalhas{
+    grid-area: medalhas;
+}
+#ajuda{
+    grid-area: ajuda;
+}
+footer{
+    align-items: center;
+    background-color: #ffbf37;
+    color: white;
+    display: flex;
+    font-family: 'Ubuntu', sans-serif;
+    grid-area: footer;
+    justify-content: space-around;
+}
+.title{
+    font-weight: bold;
+}
+#sociais{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 150px;
+}
+#sociais img{
+    width: 40px;
+}
