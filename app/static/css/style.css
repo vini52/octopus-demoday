@@ -389,9 +389,12 @@ footer{
     color: white;
     display: flex;
     font-family: 'Ubuntu', sans-serif;
-    font-weight: bold;
+    /* font-weight: bold; */
     grid-area: footer;
     justify-content: space-around;
+}
+.title{
+    font-weight: bold;
 }
 #sociais{
     display: flex;
