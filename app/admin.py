@@ -1,8 +1,8 @@
 from django.contrib import admin
-from models import Cadastro
+from app.models import Cadastro
 
 #Register your models here.
 
-@admin.register(Cadastro)
+admin.site.register(Cadastro)
 class Cadastro_Admin(admin.ModelAdmin):
     lista = ['id', 'usuario', 'genero']

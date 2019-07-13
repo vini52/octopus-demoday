@@ -22,8 +22,10 @@
         </div>
         <div id="pontuacao">
             <div>
-                <p id="nome-user">Fulano de Tal</p>
-                <p id="pontos">600 pontos</p>
+                {% for nome in nomes %}
+                <p id="nome-user">{{nome.nome}}</p>
+                {% endfor %}
+                <p id="pontos">0</p>
             </div>
             <div>
                 <img src="{% static 'icones/usuario.png' %}" alt="" id="img-user">
@@ -48,42 +50,42 @@
                 <div id="icone">
                     <img src="{% static 'icones/cama.png' %}" alt="">
                     <p>ARRUME A SUA CAMA</p>
-                    <input type="checkbox" name="" checked id="">150 pontos
+                    <input type="checkbox" name="" id="check1">150 pontos
                 </div>
                 <div id="icone">
                     <img src="{% static 'icones/chef.png' %}" alt="">
                     <p>FAÇA UMA COMIDA</p>
-                    <input type="checkbox" name="" id="">200 pontos
+                    <input type="checkbox" name="" id="check2">200 pontos
                 </div>
                 <div id="icone">
                     <img src="{% static 'icones/claquete.png' %}" alt="">
                     <p>ASSISTA UMA COMÉDIA</p>
-                    <input type="checkbox" name="" id="">100 pontos
+                    <input type="checkbox" name="" id="check3">100 pontos
                 </div>
                 <div id="icone">
                     <img src="{% static 'icones/copo-agua.png' %}" alt="">
                     <p>BEBA 2 LITROS DE ÁGUA</p>
-                    <input type="checkbox" name="" id="">200 pontos
+                    <input type="checkbox" name="" id="check4">200 pontos
                 </div>
                 <div id="icone">
                     <img src="{% static 'icones/puzzle.png' %}" alt="">
                     <p>JOGUE ALGUM JOGO</p>
-                    <input type="checkbox" name="" id="">100 pontos
+                    <input type="checkbox" name="" id="check5">100 pontos
                 </div>
                 <div id="icone">
                     <img src="{% static 'icones/park.png' %}" alt="">
                     <p>VÁ A UM PARQUE/PRAÇA</p>
-                    <input type="checkbox" name="" checked id="">200 pontos
+                    <input type="checkbox" name="" id="check6">200 pontos
                 </div>
                 <div id="icone">
                     <img src="{% static 'icones/livro.png' %}" alt="">
                     <p>LEIA UM LIVRO</p>
-                    <input type="checkbox" name="" checked id="">250 pontos
+                    <input type="checkbox" name="" id="check7">250 pontos
                 </div>
                 <div id="icone">
                     <img src="{% static 'icones/planta.png' %}" alt="">
                     <p>CUIDE DE UMA PLANTA</p>
-                    <input type="checkbox" name="" id="">100 pontos
+                    <input type="checkbox" name="" id="check8">100 pontos
                 </div>
             </div>
         </div>

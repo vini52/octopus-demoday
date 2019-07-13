@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <script defer src="{% static 'js/script.js' %}"></script>
     <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>Octopus | Página inicial</title>
 </head>
 <body>
@@ -130,7 +129,7 @@
         
         <div class="direita">
             <div id="form-login">
-                <form action="submit", method="POST">
+                <form action="octopus/", method="POST">
                     {% csrf_token %}
                     <div id="icone-input">
                         <div id="img-input"><img src="{% static 'icones/user.png' %}" alt=""></div> <input type="text" id="user" name="username" class="input-entrar" placeholder="Digite seu email...">
@@ -146,7 +145,7 @@
                     </div>
                     <div id="center-button">
                             {% for message in messages %}
-                            <div class="alert alert-danger">
+                            <div class="">
                                 <strong>Error!</strong>{{ message }}
                             </div>
                             {% endfor %}

@@ -8,14 +8,14 @@ class Cadastro(models.Model):
                ('F', 'Feminino'),
                ('SN', 'Não Informado'),]
 
-    nome = models.CharField(max_Length=100)
-    genero = models.CharField(max_Length=2, choices=generos)
+    nome = models.CharField(max_length=100)
+    genero = models.CharField(max_length=2, choices=generos)
     email = models.EmailField()
-    celular = models.CharField(max_Length=11)
+    celular = models.CharField(max_length=11)
     nascimento = models.DateField()
     pais_origem = models.CharField(max_length=50)
     usuario = models.ForeignKey(User, on_delete=models.CASCADE)
-    senha = models.CharField(max_Length=8)
+    senha = models.CharField(max_length=8)
 
     def __str__(self):
         return self.nome
