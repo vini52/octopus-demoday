@@ -14,28 +14,23 @@ body{
 }
 
 header{
+    grid-area: header;
     background-attachment: fixed;
     background-image: url("/static/imagens/pessoas.png");
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 18pt;
-    font-weight: 500;
-    grid-area: header;
-    justify-content: space-between;
+    position: relative;
+    display: inline-block;
 }
-header nav ul {	
-    align-items: center;	
-    display: flex; 	
-    justify-content: flex-end;
-    list-style-type: none;	
-}
+
 header a {	
     color: white;	
     font-family: 'Ubuntu', sans-serif;
-    font-size: 18pt;
+    font-size: 14pt;
     font-weight: 500;
     text-decoration: none;	
 }	
@@ -44,46 +39,46 @@ header a:hover {
     color: #2674A8;
     transition: 0.3s;
 }
-#navbar{
-    align-items: center;
+.navbar{
+    background-color: transparent;
     display: flex;
+    align-items: center;
     justify-content: space-between;
+    width: 100%;
+    height: 76px;
+    position: fixed;
+    top: 0;
+    transition: .5s;
+    z-index: 1000;
 
 }
-#boxSize{
+.menu{
     display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 50%;
+    
+}
+.logo{
+    width: 20%;
+    display: flex;
+    align-items: center;
     justify-content: center;
-    width: 200px;
 }
-#navPrincipal{
-    width: 100%;
-}
-#octopusLogo{
-    margin-left: 30px;
-    margin-top: 15px;
-}
-#octopus{
-    color: white;
+
+.bannerContainer{
+    height: 100%;
     display: flex;
-    font-weight: 500;
+    justify-content: flex-end;
     flex-direction: column;
-    justify-content: flex-start;
-    margin-left: 100px;
 }
-#text{
+.texto{
     font-size: 12pt;
     text-align: justify;
     width: 300px;
+    color: white;
 }
-.fixedMenu{
-    background: #ffbf37;
-    height: auto;	
-    position: fixed;	
-    top: 0px;
-    transition: 1s;
-    width: 100%;	
-    z-index: 100;
-}
+
 #projeto{
     align-items: center;
     display: flex;

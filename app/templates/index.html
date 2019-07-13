@@ -12,60 +12,52 @@
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <script defer src="{% static 'js/script.js' %}"></script>
     <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $(window).scroll(function(){
+                if($(this).scrollTop() > 100){
+                    $(".navbar").css({"opacity" : "1"})
+                    $(".navbar").css({"background-color": "#ffbf37"})
+                    $("#octopusLogo").attr("src","{% static 'icones/logo2.png' %}" )
+                    
+                }else{
+                    $(".navbar").css({"background-color": "transparent"})
+                    $("#octopusLogo").attr("src","{% static 'icones/polvinho1.png' %}" )
+                    
+                }
+            })
+        })
+    </script>
     <title>Octopus | Página inicial</title>
 </head>
 <body>
-<header id="header">
-    <div id="navPrincipal" >
-        <nav>
-            <div id="navbar">
-                <div id="boxSize">
-                    <a  href="#">
-                        <img id="octopusLogo" src="{% static 'icones/polvinho1.png' %}" alt="Logo octopus">
-                    </a>
-                </div>
-                <ul>
-                    <li>
-                        <div id="boxSize">
-                            <a id="oProjeto" href="#">
-                                Início
-                            </a>
-                        </div>
-                    </li>
-                    <li>
-                        <div id="boxSize">
-                            <a id="" href="#projeto">
-                                O Projeto
-                            </a>
-                        </div>
-                    </li>
-                    <li>
-                        <div id="boxSize">
-                            <a id="" href="#cadastro">
-                                Entrar
-                            </a>
-                        </div>
-                    </li>
-                    <li>
-                        <div id="boxSize">
-                            <a id="" href="#pilares">
-                                Pilares
-                            </a>
-                        </div>
-                    </li>
-                </ul>
-            </div>             
+<header>
+    
+       <nav class="navbar transition">
+
+            <div class="logo">
+                <img id="octopusLogo" src="{% static 'icones/polvinho1.png' %}" alt="Logo octopus">                
+            </div>
+            <div class="menu">
+                <a href="#">Inicio</a>
+                <a href="#projeto">O Projeto</a>
+                <a href="#cadastro">Entre</a>
+                <a href="#pilares">Pilares</a>
+            </div>
+
         </nav>
-    </div>
-    <div id="octopus">
-        <div id="logoOctopus">
-            <img src="{% static 'icones/logo1.png' %}" alt="">
-        </div>
-        <div id="text">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, Animi eius nihil rerum voluptatem assumenda.</p>
-        </div>
-        
-    </div>
+        <section class="bannerContainer">
+            
+            <div class="imagem">
+                <img src="{% static 'icones/logo1.png' %}" alt="">
+                
+            </div>
+            <div class="texto">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, Animi eius nihil rerum voluptatem assumenda.</p>   
+            </div>
+
+        </section>
 </header>
 <section id="projeto">
     <div id="largura-projeto">
