@@ -3,11 +3,11 @@ let btnBack = document.querySelector('#btn-back');
 
 function next(){
     let slider = document.querySelector('.slider');
-    sideScroll(slider,'direita',5,160,180);
+    sideScroll(slider,'direita',5,130,165);
 }
 function back(){
     let slider = document.querySelector('.slider');
-    sideScroll(slider,'esquerda',5,115,115);
+    sideScroll(slider,'esquerda',5,130,165);
 }
 function sideScroll(elemento,direcao,velocidade,distancia,passo){
     scrollAmount = 0;

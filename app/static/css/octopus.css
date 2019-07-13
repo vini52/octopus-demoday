@@ -146,19 +146,25 @@ nav p{
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
 }
-#medalha{
+.medalha{
     align-items: center;
     display: flex;
     flex-direction: column;
     font-family: 'Ubuntu', sans-serif;
     text-align: center;
 }
-#medalha img{
+.medalha img{
     filter: grayscale(100%);
     width: 38%;
 }
-#medalha p{
+.medalha p{
     margin: 6px 0px;
+}
+#medalha1 img{
+    filter: grayscale(0%);
+}
+#medalha3 img{
+    filter: grayscale(0%);
 }
 #text-span{
     display: flex;
