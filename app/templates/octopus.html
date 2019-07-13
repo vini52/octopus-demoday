@@ -11,6 +11,7 @@
     <link rel="shortcut icon" href="{% static 'icones/octopus.png' %}" type="image/x-icon">
     <link rel="stylesheet" href="{% static 'css/octopus.css' %}">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+    <script src="{% static 'js/octopus.js' %}" defer></script>
     <title>Octopus</title>
 </head>
 
@@ -22,7 +23,7 @@
         <div id="pontuacao">
             <div>
                 <p id="nome-user">Fulano de Tal</p>
-                <p id="pontos">610 pontos</p>
+                <p id="pontos">600 pontos</p>
             </div>
             <div>
                 <img src="{% static 'icones/usuario.png' %}" alt="" id="img-user">
@@ -47,7 +48,7 @@
                 <div id="icone">
                     <img src="{% static 'icones/cama.png' %}" alt="">
                     <p>ARRUME A SUA CAMA</p>
-                    <input type="checkbox" name="" id="">150 pontos
+                    <input type="checkbox" name="" checked id="">150 pontos
                 </div>
                 <div id="icone">
                     <img src="{% static 'icones/chef.png' %}" alt="">
@@ -72,12 +73,12 @@
                 <div id="icone">
                     <img src="{% static 'icones/park.png' %}" alt="">
                     <p>VÁ A UM PARQUE/PRAÇA</p>
-                    <input type="checkbox" name="" id="">200 pontos
+                    <input type="checkbox" name="" checked id="">200 pontos
                 </div>
                 <div id="icone">
                     <img src="{% static 'icones/livro.png' %}" alt="">
                     <p>LEIA UM LIVRO</p>
-                    <input type="checkbox" name="" id="">250 pontos
+                    <input type="checkbox" name="" checked id="">250 pontos
                 </div>
                 <div id="icone">
                     <img src="{% static 'icones/planta.png' %}" alt="">
@@ -95,56 +96,56 @@
                 </aside>
             </div>
             <div class="icone-medalhas">
-                <div id="medalha">
+                <div class="medalha" id="medalha1">
                     <img src="{% static 'icones/medalha-octopus.png' %}" alt="">
                     <p>MEDALHA OCTOPUS</p>
                     <div id="text-span">
                         <span>Fez o seu cadastro e se juntou a nós!</span>
                     </div>
                 </div>
-                <div id="medalha">
+                <div class="medalha">
                     <img src="{% static 'icones/medalha-ventosa.png' %}" alt="">
                     <p>MEDALHA VENTOSA</p>
                     <div id="text-span">
                         <span>Entrou no site por 7 dias seguidos. Você está grudadinho em nós e na sua meta!</span>
                     </div>
                 </div>
-                <div id="medalha">
+                <div class="medalha" id="medalha3">
                     <img src="{% static 'icones/medalha-tentaculo.png' %}" alt="">
                     <p>MEDALHA TENTÁCULO</p>
                     <div id="text-span">
                         <span>Completou sua primeira missão. Uma ótima forma de dar o primeiro passo!</span>
                     </div>
                 </div>
-                <div id="medalha">
+                <div class="medalha">
                     <img src="{% static 'icones/medalha-tinta.png' %}" alt="">
                     <p>MEDALHA TINTA</p>
                     <div id="text-span">
                         <span>Chegou em 1000 pontos. Assim como o polvo, você tem se defendido muito bem!</span>
                     </div>
                 </div>
-                <div id="medalha">
+                <div class="medalha">
                     <img src="{% static 'icones/medalha-perseverante.png' %}" alt="">
                     <p>MEDALHA PERSEVERANTE</p>
                     <div id="text-span">
                         <span>Completou 100 missões. O Octopus está muito orgulhoso de você!</span>
                     </div>
                 </div>
-                <div id="medalha">
+                <div class="medalha">
                     <img src="{% static 'icones/medalha-parceiro.png' %}" alt="">
                     <p>MEDALHA PARCEIRO</p>
                     <div id="text-span">
                         <span>Conversou com o Octopus no chatbot pelo menos uma vez.</span>
                     </div>
                 </div>
-                <div id="medalha">
+                <div class="medalha">
                     <img src="{% static 'icones/medalha-aniversario.png' %}" alt="">
                     <p>MEDALHA ANIVERSÁRIO</p>
                     <div id="text-span">
                         <span>Você é muito especial! Um feliz aniversário e obrigado por não desistir.</span>
                     </div>
                 </div>
-                <div id="medalha">
+                <div class="medalha">
                     <img src="{% static 'icones/medalha-festivo.png' %}" alt="">
                     <p>MEDALHA FESTIVO</p>
                     <div id="text-span">
@@ -173,6 +174,31 @@
                     <p>Telefone 188 (ligação gratuita) ou www.cvv.org.br para chat, Skype, e-mail e mais informações
                     </p>
                 </div>
+            </div>
+            <div id="instituicoes">
+                <div id="empresas">
+                    <button id="btn-back"><img src="{% static 'icones/back.png' %}" alt=""></button>
+                    <ol class="slider">
+                        <li>
+                            <img src="{% static 'imagens/empresa1.png' %}" alt="">
+                        </li>
+                        <li>
+                            <img src="{% static 'imagens/empresa2.jpg' %}" alt="">
+                        </li>
+                        <li>
+                            <img src="{% static 'imagens/empresa3.jpg' %}" alt="">
+                        </li>
+                        <li>
+                            <img src="{% static 'imagens/empresa4.png' %}" alt="">
+                        </li>
+                        <li>
+                            <img src="{% static 'imagens/empresa5.jpg' %}" alt="">
+                        </li>
+                        <li>
+                            <img src="{% static 'imagens/empresa6.jpg' %}" alt="">
+                        </li>                      
+                    </ol>
+                    <button id="btn-next"><img src="{% static 'icones/next.png' %}" alt=""></button>
             </div>
         </div>
     </section>
