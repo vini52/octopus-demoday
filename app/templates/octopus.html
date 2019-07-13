@@ -11,6 +11,7 @@
     <link rel="shortcut icon" href="{% static 'icones/octopus.png' %}" type="image/x-icon">
     <link rel="stylesheet" href="{% static 'css/octopus.css' %}">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+    <script src="{% static 'js/octopus.js' %}" defer></script>
     <title>Octopus</title>
 </head>
 
@@ -22,7 +23,7 @@
         <div id="pontuacao">
             <div>
                 <p id="nome-user">Fulano de Tal</p>
-                <p id="pontos">610 pontos</p>
+                <p id="pontos">600 pontos</p>
             </div>
             <div>
                 <img src="{% static 'icones/usuario.png' %}" alt="" id="img-user">
@@ -47,42 +48,42 @@
                 <div id="icone">
                     <img src="{% static 'icones/cama.png' %}" alt="">
                     <p>ARRUME A SUA CAMA</p>
-                    <input type="checkbox" name="" id="">150 pontos
+                    <input type="checkbox" name="" checked id="" disabled>150 pontos
                 </div>
                 <div id="icone">
                     <img src="{% static 'icones/chef.png' %}" alt="">
                     <p>FAÇA UMA COMIDA</p>
-                    <input type="checkbox" name="" id="">200 pontos
+                    <input type="checkbox" name="" id="" disabled>200 pontos
                 </div>
                 <div id="icone">
                     <img src="{% static 'icones/claquete.png' %}" alt="">
                     <p>ASSISTA UMA COMÉDIA</p>
-                    <input type="checkbox" name="" id="">100 pontos
+                    <input type="checkbox" name="" id="" disabled>100 pontos
                 </div>
                 <div id="icone">
                     <img src="{% static 'icones/copo-agua.png' %}" alt="">
                     <p>BEBA 2 LITROS DE ÁGUA</p>
-                    <input type="checkbox" name="" id="">200 pontos
+                    <input type="checkbox" name="" id="" disabled>200 pontos
                 </div>
                 <div id="icone">
                     <img src="{% static 'icones/puzzle.png' %}" alt="">
                     <p>JOGUE ALGUM JOGO</p>
-                    <input type="checkbox" name="" id="">100 pontos
+                    <input type="checkbox" name="" id="" disabled>100 pontos
                 </div>
                 <div id="icone">
                     <img src="{% static 'icones/park.png' %}" alt="">
                     <p>VÁ A UM PARQUE/PRAÇA</p>
-                    <input type="checkbox" name="" id="">200 pontos
+                    <input type="checkbox" name="" checked id="" disabled>200 pontos
                 </div>
                 <div id="icone">
                     <img src="{% static 'icones/livro.png' %}" alt="">
                     <p>LEIA UM LIVRO</p>
-                    <input type="checkbox" name="" id="">250 pontos
+                    <input type="checkbox" name="" checked id="" disabled>250 pontos
                 </div>
                 <div id="icone">
                     <img src="{% static 'icones/planta.png' %}" alt="">
                     <p>CUIDE DE UMA PLANTA</p>
-                    <input type="checkbox" name="" id="">100 pontos
+                    <input type="checkbox" name="" id="" disabled>100 pontos
                 </div>
             </div>
         </div>
@@ -173,6 +174,31 @@
                     <p>Telefone 188 (ligação gratuita) ou www.cvv.org.br para chat, Skype, e-mail e mais informações
                     </p>
                 </div>
+            </div>
+            <div id="instituicoes">
+                <div id="empresas">
+                    <button id="btn-back"><img src="{% static 'icones/back.png' %}" alt=""></button>
+                    <ol class="slider">
+                        <li>
+                            <img src="{% static 'imagens/empresa1.png' %}" alt="">
+                        </li>
+                        <li>
+                            <img src="{% static 'imagens/empresa2.jpg' %}" alt="">
+                        </li>
+                        <li>
+                            <img src="{% static 'imagens/empresa3.jpg' %}" alt="">
+                        </li>
+                        <li>
+                            <img src="{% static 'imagens/empresa4.png' %}" alt="">
+                        </li>
+                        <li>
+                            <img src="{% static 'imagens/empresa5.jpg' %}" alt="">
+                        </li>
+                        <li>
+                            <img src="{% static 'imagens/empresa6.jpg' %}" alt="">
+                        </li>                      
+                    </ol>
+                    <button id="btn-next"><img src="{% static 'icones/next.png' %}" alt=""></button>
             </div>
         </div>
     </section>

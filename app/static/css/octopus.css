@@ -28,6 +28,7 @@ nav p{
 }
 #pontuacao{
     align-items: center;
+    cursor: pointer;
     display: flex;
     justify-content: space-between;
     width: 165px;
@@ -115,8 +116,6 @@ nav p{
 .conteudo-medalhas{
     background-color: white;
     border-radius: 20px;
-    height: 90%;
-    width: 90%;
     display: grid;
     grid-template-areas: 'titulo-medalhas titulo-medalhas titulo-medalhas titulo-medalhas'
                          'icone-medalhas icone-medalhas icone-medalhas icone-medalhas';
@@ -148,10 +147,14 @@ nav p{
     grid-template-rows: 1fr 1fr;
 }
 #medalha{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
     font-family: 'Ubuntu', sans-serif;
     text-align: center;
 }
 #medalha img{
+    filter: grayscale(100%);
     width: 38%;
 }
 #medalha p{
@@ -163,7 +166,6 @@ nav p{
     align-items: center;
     text-align: center;
     width: 200px;
-    margin-left: 60px;
 }
 #ajuda{
     align-items: center;
@@ -190,13 +192,13 @@ nav p{
 .conteudo-ajuda{
     background-color: white;
     border-radius: 20px;
-    height: 90%;
-    width: 90%;
     display: grid;
-    grid-template-areas: 'titulo-ajuda '
-                         'servicos';
+    grid-template-areas: 'titulo-ajuda'
+                         'servicos'
+                         'instituicoes';
     grid-template-rows: 10% 50%;
     height: 95%;
+    max-width: 95%;
     width: 95%; 
 }
 .servicos{
@@ -206,6 +208,60 @@ nav p{
     font-family: 'Ubuntu', sans-serif;
     color: #2674A8;
       
+}
+#instituicoes{
+    align-items: center;
+    display: flex;
+    grid-area: instituicoes;
+    justify-content: center;
+    max-width: 100%;
+}
+#instituicoes button{
+    background: none;
+    border: none;
+    cursor: pointer;
+    max-width: 100%;
+    padding: 0;
+}
+#empresas{
+    align-items: center;
+    display: flex;
+    height: 80%;
+    justify-content: center;
+    max-width: 90%;
+    width: 90%;
+}
+#empresas button img{
+    height: 30px;
+}
+.slider{
+    align-items: center;
+    display: flex;
+    margin: 0;
+    max-width: 75%;
+    overflow: hidden;
+    padding: 0;
+    width: 60%;
+}
+.slider li{
+    cursor: pointer;
+    filter: grayscale(100%);
+    list-style: none;
+}
+.slider li:hover{
+    filter: grayscale(0%);
+    transition: .6s;
+}
+.slider li:nth-child(1){
+    margin-left: 10px;
+}
+.slider img{
+    display: inline;
+    float: none;
+    height: 130px;
+    margin: 0 40px 0 0;
+    vertical-align: top;
+    width: 130px;
 }
 #teste{ 
     width:40%;
