@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <script defer src="{% static 'js/script.js' %}"></script>
     <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>Octopus | Página inicial</title>
 </head>
 <body>
@@ -129,12 +130,13 @@
         
         <div class="direita">
             <div id="form-login">
-                <form action="POST">
+                <form action="submit", method="POST">
+                    {% csrf_token %}
                     <div id="icone-input">
-                        <div id="img-input"><img src="{% static 'icones/user.png' %}" alt=""></div> <input type="text" id="user" class="input-entrar" placeholder="Digite seu email...">
+                        <div id="img-input"><img src="{% static 'icones/user.png' %}" alt=""></div> <input type="text" id="user" name="username" class="input-entrar" placeholder="Digite seu email...">
                     </div>
                     <div id="icone-input">
-                            <div id="img-input"><img src="{% static 'icones/lock.png' %}" alt=""></div> <input type="password" id="senha" class="input-entrar" placeholder="Digite sua senha...">
+                            <div id="img-input"><img src="{% static 'icones/lock.png' %}" alt=""></div> <input type="password" id="senha" name="password" class="input-entrar" placeholder="Digite sua senha...">
                         </div>
                     <div id="checkbox-form">
                         <div>
@@ -142,7 +144,14 @@
                         </div>
                         <a href="#">Esqueceu a senha?</a>
                     </div>
-                    <div id="center-button"><input type="submit" id="botao" value="Entrar"></div>
+                    <div id="center-button">
+                            {% for message in messages %}
+                            <div class="alert alert-danger">
+                                <strong>Error!</strong>{{ message }}
+                            </div>
+                            {% endfor %}
+                        <input type="submit" id="botao" value="Entrar">
+                    </div>
                 </form>
             </div>
         </div>
