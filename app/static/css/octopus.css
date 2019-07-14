@@ -13,6 +13,7 @@ body{
                         'footer footer footer footer';
     grid-template-rows: 76px 8vh 90vh 90vh 90vh 30vh;
     margin: 0;
+    overflow-x: hidden;
 }
 nav{
     align-items: center;

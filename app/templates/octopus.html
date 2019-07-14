@@ -12,7 +12,9 @@
     <link rel="stylesheet" href="{% static 'css/octopus.css' %}">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
     <script src="{% static 'js/octopus.js' %}" defer></script>
-    <title>Octopus</title>
+    {% for nomes in nomes %}
+    <title>Octopus | {{nomes.nome}}</title>
+    {% endfor %}
 </head>
 
 <body>
@@ -34,7 +36,7 @@
     </nav>
     <div id="links">
         <div>
-            <a href="#">Missões</a>
+            <a href="#missoes">Missões</a>
             <a href="#medalhas">Medalhas</a>
             <a href="#ajuda">Buscar Ajuda</a>
         </div>
@@ -50,42 +52,42 @@
                 <div id="icone">
                     <img src="{% static 'icones/cama.png' %}" alt="">
                     <p>ARRUME A SUA CAMA</p>
-                    <input type="checkbox" name="" id="check1">150 pontos
+                    <input type="checkbox" name="" id="check1" value="150">150 pontos
                 </div>
                 <div id="icone">
                     <img src="{% static 'icones/chef.png' %}" alt="">
                     <p>FAÇA UMA COMIDA</p>
-                    <input type="checkbox" name="" id="check2">200 pontos
+                    <input type="checkbox" name="" id="check2" value="200">200 pontos
                 </div>
                 <div id="icone">
                     <img src="{% static 'icones/claquete.png' %}" alt="">
                     <p>ASSISTA UMA COMÉDIA</p>
-                    <input type="checkbox" name="" id="check3">100 pontos
+                    <input type="checkbox" name="" id="check3" value="100">100 pontos
                 </div>
                 <div id="icone">
                     <img src="{% static 'icones/copo-agua.png' %}" alt="">
                     <p>BEBA 2 LITROS DE ÁGUA</p>
-                    <input type="checkbox" name="" id="check4">200 pontos
+                    <input type="checkbox" name="" id="check4" value="200">200 pontos
                 </div>
                 <div id="icone">
                     <img src="{% static 'icones/puzzle.png' %}" alt="">
                     <p>JOGUE ALGUM JOGO</p>
-                    <input type="checkbox" name="" id="check5">100 pontos
+                    <input type="checkbox" name="" id="check5" value="100">100 pontos
                 </div>
                 <div id="icone">
                     <img src="{% static 'icones/park.png' %}" alt="">
                     <p>VÁ A UM PARQUE/PRAÇA</p>
-                    <input type="checkbox" name="" id="check6">200 pontos
+                    <input type="checkbox" name="" id="check6" value="200">200 pontos
                 </div>
                 <div id="icone">
                     <img src="{% static 'icones/livro.png' %}" alt="">
                     <p>LEIA UM LIVRO</p>
-                    <input type="checkbox" name="" id="check7">250 pontos
+                    <input type="checkbox" name="" id="check7" value="250">250 pontos
                 </div>
                 <div id="icone">
                     <img src="{% static 'icones/planta.png' %}" alt="">
                     <p>CUIDE DE UMA PLANTA</p>
-                    <input type="checkbox" name="" id="check8">100 pontos
+                    <input type="checkbox" name="" id="check8" value="100">100 pontos
                 </div>
             </div>
         </div>
@@ -105,7 +107,7 @@
                         <span>Fez o seu cadastro e se juntou a nós!</span>
                     </div>
                 </div>
-                <div class="medalha">
+                <div class="medalha" id="medalha2">
                     <img src="{% static 'icones/medalha-ventosa.png' %}" alt="">
                     <p>MEDALHA VENTOSA</p>
                     <div id="text-span">
@@ -119,35 +121,35 @@
                         <span>Completou sua primeira missão. Uma ótima forma de dar o primeiro passo!</span>
                     </div>
                 </div>
-                <div class="medalha">
-                    <img src="{% static 'icones/medalha-tinta.png' %}" alt="">
+                <div class="medalha" id="medalha4">
+                    <img src="{% static 'icones/medalha-tinta.png' %}" alt="" id="img-teste">
                     <p>MEDALHA TINTA</p>
                     <div id="text-span">
                         <span>Chegou em 1000 pontos. Assim como o polvo, você tem se defendido muito bem!</span>
                     </div>
                 </div>
-                <div class="medalha">
+                <div class="medalha" id="medalha5">
                     <img src="{% static 'icones/medalha-perseverante.png' %}" alt="">
                     <p>MEDALHA PERSEVERANTE</p>
                     <div id="text-span">
                         <span>Completou 100 missões. O Octopus está muito orgulhoso de você!</span>
                     </div>
                 </div>
-                <div class="medalha">
+                <div class="medalha" id="medalha6">
                     <img src="{% static 'icones/medalha-parceiro.png' %}" alt="">
                     <p>MEDALHA PARCEIRO</p>
                     <div id="text-span">
                         <span>Conversou com o Octopus no chatbot pelo menos uma vez.</span>
                     </div>
                 </div>
-                <div class="medalha">
+                <div class="medalha" id="medalha7">
                     <img src="{% static 'icones/medalha-aniversario.png' %}" alt="">
                     <p>MEDALHA ANIVERSÁRIO</p>
                     <div id="text-span">
                         <span>Você é muito especial! Um feliz aniversário e obrigado por não desistir.</span>
                     </div>
                 </div>
-                <div class="medalha">
+                <div class="medalha" id="medalha8">
                     <img src="{% static 'icones/medalha-festivo.png' %}" alt="">
                     <p>MEDALHA FESTIVO</p>
                     <div id="text-span">
