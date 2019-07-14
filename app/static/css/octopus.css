@@ -20,8 +20,12 @@ nav{
     background-color: #ffbf37;
     display: flex;
     grid-area: nav;
+    height: 76px;
     justify-content: space-between;
     padding: 0 25px 0 25px;
+    position: fixed;
+    width: 96.5%;
+    z-index: 1000;
 }
 nav p{
     color: white;
