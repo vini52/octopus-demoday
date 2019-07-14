@@ -22,4 +22,5 @@ urlpatterns = [
     path('', views.mostrar_index),
     path('octopus/', views.mostrar_octopus),
     path('octopus/user', views.mostrar_octopus_logado),
+    path('logout/', views.logout_user),
 ]

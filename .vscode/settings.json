@@ -1,4 +1,4 @@
 {
-    "python.pythonPath": "C:\\Users\\Victo\\Anaconda3\\python.exe",
+    "python.pythonPath": "env\\Scripts\\python.exe",
     "liveServer.settings.port": 5501
 }
