@@ -17,7 +17,6 @@ def logout_user(request):
     return redirect('/octopus/')
 
 @csrf_protect
-@login_required(login_url='/')
 def mostrar_octopus(request):
     if request.method == "POST":
         username = request.POST.get('username')
@@ -31,6 +30,7 @@ def mostrar_octopus(request):
             return redirect('/')
     return HttpResponse('')
 
+@login_required(login_url='/')
 def mostrar_octopus_logado(request):
     nomes = Cadastro.objects.all()
     return render(request, 'octopus.html', {'nomes': nomes})
