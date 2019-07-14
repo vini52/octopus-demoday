@@ -12,7 +12,7 @@ class CadastroForm(forms.ModelForm):
             'nascimento',
             'telefone'
         ]
-
+    senha = forms.CharField(max_length=100, widget=forms.PasswordInput)
 class LoginForm(forms.Form):
     usuario = forms.CharField(widget=forms.TextInput(attrs={'id': 'user', 'class': 'input-entrar', 'placeholder': 'Digite seu usuário...'}))
     senha = forms.CharField(widget=forms.PasswordInput(attrs={'id': 'senha', 'class': 'input-entrar', 'placeholder': 'Digite sua senha...'}))
