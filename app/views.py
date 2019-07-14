@@ -14,7 +14,7 @@ def mostrar_index(request):
 def logout_user(request):
     print(request.user)
     logout(request)
-    return redirect('/octopus/')
+    return redirect('/')
 
 @csrf_protect
 def mostrar_octopus(request):
