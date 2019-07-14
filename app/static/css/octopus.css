@@ -38,6 +38,17 @@ nav p{
     justify-content: space-between;
     width: 165px;
 }
+#sair{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-family: 'Ubuntu', sans-serif;
+}
+#bye{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 #nome-user{
     font-weight: bold;
 }
