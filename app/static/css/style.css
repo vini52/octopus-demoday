@@ -40,9 +40,9 @@ header a:hover {
     transition: 0.3s;
 }
 .navbar{
+    align-items: center;
     background-color: transparent;
     display: flex;
-    align-items: center;
     justify-content: space-between;
     width: 100%;
     height: 76px;
@@ -72,13 +72,29 @@ header a:hover {
     justify-content: flex-end;
     flex-direction: column;
 }
+#container-header{
+    display: flex;
+    flex-direction: column;
+    height: 35%;
+    justify-content: center;
+    width: 35%;
+}
+.imagem{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
 .texto{
+    display: flex;
+    justify-content: center;
+    color: white;
     font-size: 12pt;
     text-align: justify;
-    width: 300px;
-    color: white;
+    width: 100%;
 }
-
+.texto p{
+    width: 60%;
+}
 #projeto{
     align-items: center;
     display: flex;
@@ -403,6 +419,20 @@ footer{
 }
 #sociais img{
     width: 40px;
+}
+#btn-chat{
+    background-color: #2674A8;
+    border: none;
+    border-radius: 100%;
+    bottom: 30px;
+    cursor: pointer;
+    height: 60px;
+    position: fixed;
+    right: 30px;
+    width: 60px;
+}
+#btn-chat img{
+    width: 50px;
 }
 ::-webkit-scrollbar{
     background-color: #ffbf37;
