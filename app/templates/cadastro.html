@@ -1,0 +1,34 @@
+{% extends 'layout.html' %}
+{% load staticfiles %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{% static 'css/cadastro.css' %}">
+    <title>Cadastro</title>
+</head>
+<body>
+    <nav>
+        <div>
+            <a href="/"><img src="{% static 'icones/logo2.png' %}" alt=""></a>
+    </nav>
+    <section>
+        <div id="formulario">
+            <form action="" method="POST">
+                {% csrf_token %}
+                <div><h3>Nome:</h3>{{form.nome}}</div>
+                <div><h3>Usuário:</h3>{{form.usuario}}</div>
+                <div><h3>Senha:</h3>{{form.senha}}</div>
+                <div><h3>Email:</h3>{{form.email}}</div>
+                <div><h3>Nascimento:</h3>{{form.nascimento}}</div>
+                <div><h3>Telefone:</h3>{{form.telefone}}</div>
+                <div id="center-button">
+                    <input type="submit" id="botao" value="Enviar">
+                </div>
+            </form>
+        </div>
+    </section>
+{% endblock %}

@@ -99,7 +99,7 @@
         <h1><span>|</span> ENTRAR</h1>
     </div>
     <div id="cadastrar">
-        <p>Ainda não possui uma conta? </p> <a href="#"> Cadastre-se!</a>
+        <p>Ainda não possui uma conta? </p> <a href="/cadastro"> Cadastre-se!</a>
     </div>
     <div class="template1">
         <div class="esquerda">
@@ -121,27 +121,37 @@
         
         <div class="direita">
             <div id="form-login">
-                <form action="octopus/", method="POST">
+                <form action="/", method="POST">
                     {% csrf_token %}
                     <div id="icone-input">
-                        <div id="img-input"><img src="{% static 'icones/user.png' %}" alt=""></div> <input type="text" id="user" name="username" class="input-entrar" placeholder="Digite seu usuário...">
+                        <div id="img-input">
+                            <img src="{% static 'icones/user.png' %}" alt="">
+                        </div>
+                        {{ form.usuario }}
                     </div>
                     <div id="icone-input">
-                            <div id="img-input"><img src="{% static 'icones/lock.png' %}" alt=""></div> <input type="password" id="senha" name="password" class="input-entrar" placeholder="Digite sua senha...">
+                        <div id="img-input">
+                            <img src="{% static 'icones/lock.png' %}" alt="">
                         </div>
-                    <div id="checkbox-form">
-                        <div>
-                            <input type="checkbox" name="" id="check-lembrar"><label for="check-lembrar">Lembrar-me</label>
-                        </div>
-                        <a href="#">Esqueceu a senha?</a>
+                        {{ form.senha }}
                     </div>
-                    <div id="center-button">
-                            {% for message in messages %}
-                            <div class="">
-                                <strong>Error!</strong>{{ message }}
+                    {% if msg != ' ' %}
+                        {{ msg }}
+                    {% endif %}
+                    <div id="checkbox-form">
+                            <div>
+                                <input type="checkbox" name="" id="check-lembrar"><label for="check-lembrar">Lembrar-me</label>
                             </div>
-                            {% endfor %}
-                        <input type="submit" id="botao" value="Entrar">
+                            <a href="#">Esqueceu a senha?</a>
+                        </div>
+                        <div id="center-button">
+                                {% for message in messages %}
+                                <div class="">
+                                    <strong>Error!</strong>{{ message }}
+                                </div>
+                                {% endfor %}
+                            <input type="submit" id="botao" value="Entrar">
+                        </div> 
                     </div>
                 </form>
             </div>

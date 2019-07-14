@@ -20,7 +20,7 @@ from app import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.mostrar_index),
-    path('octopus/', views.mostrar_octopus),
-    path('octopus/user', views.mostrar_octopus_logado),
+    path('octopus/user', views.mostrar_index),
     path('logout/', views.logout_user),
+    path('cadastro/', views.mostrar_cadastro),
 ]

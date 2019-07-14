@@ -4,18 +4,25 @@ from django.contrib.auth.models import User
 # Create your models here.
 
 class Cadastro(models.Model):
-    generos = [('M', 'Masculino'),
-               ('F', 'Feminino'),
-               ('SN', 'Não Informado'),]
+    medalhas_opcoes = [
+        ('oc', 'Octopus'),
+        ('vt', 'Ventosa'),
+        ('tc', 'Tentáculo'),
+        ('tn', 'Tinta'),
+        ('pv', 'Perseverante'),
+        ('pc', 'Parceiro'),
+        ('an', 'Aniversário'),
+        ('ft', 'Festivo')
+    ]
 
     nome = models.CharField(max_length=100)
-    genero = models.CharField(max_length=2, choices=generos)
+    usuario = models.CharField(max_length=100)
+    senha = models.CharField(max_length=100)
     email = models.EmailField()
-    celular = models.CharField(max_length=11)
     nascimento = models.DateField()
-    pais_origem = models.CharField(max_length=50)
-    usuario = models.ForeignKey(User, on_delete=models.CASCADE)
-    senha = models.CharField(max_length=8)
+    telefone = models.CharField(max_length=12, default='')
+    pontos = models.IntegerField(default=0)
+    medalhas = models.CharField(choices=medalhas_opcoes, max_length=2, default='oc')
 
     def __str__(self):
         return self.nome

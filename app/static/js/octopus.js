@@ -45,8 +45,8 @@ function somarPontos(){
     }
     pontuacao.innerHTML = total;
     if(total >= 1000){
-        alert('Parabéns! Você ganhou a medalha Tinta.');
         let medalha = document.querySelector('#img-teste');
         medalha.style.filter = "grayscale(0%)";
+        alert('Parabéns! Você ganhou a medalha Tinta.');
     }
 }

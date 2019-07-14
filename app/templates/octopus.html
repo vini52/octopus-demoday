@@ -12,9 +12,7 @@
     <link rel="stylesheet" href="{% static 'css/octopus.css' %}">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
     <script src="{% static 'js/octopus.js' %}" defer></script>
-    {% for nomes in nomes %}
-    <title>Octopus | {{nomes.nome}}</title>
-    {% endfor %}
+    <title>Octopus</title>
 </head>
 
 <body>
@@ -24,15 +22,13 @@
         </div>
         <div id="pontuacao">
             <div>
-                {% for nome in nomes %}
-                <p id="nome-user">{{nome.nome}}</p>
-                {% endfor %}
+                <p id="nome-user">{{ usuario_logado }}</p>
                 <p id="pontos">0</p>
             </div>
             <div>
                 <img src="{% static 'icones/usuario.png' %}" alt="" id="img-user">
                 <div id="bye">
-                    <a id="sair" href="/logout/">Sair</a>
+                    <a id="sair" href="/">Sair</a>
                 </div>
             </div>
         </div>

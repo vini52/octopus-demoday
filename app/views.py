@@ -1,36 +1,40 @@
 from django.shortcuts import render, redirect
-from django.views.decorators.csrf import csrf_protect
-from django.contrib.auth import authenticate, login, logout
-from django.contrib import messages
-from django.contrib.auth.decorators import login_required
-from django.http import HttpResponse
 from app.models import Cadastro
+from app.forms import CadastroForm, LoginForm
 
 # Create your views here.
 
+def mostrar_cadastro(request):
+    form = CadastroForm(request.POST or None)
+    msg = ''
+    if form.is_valid():
+        form.save()
+        form = CadastroForm()
+        msg = 'Cadastro criado com sucesso'
+        return redirect('/octopus/user')
+    contexto = {
+        'form' : form,
+        'msg' : msg
+    }
+    return render(request, 'cadastro.html', contexto)
+
 def mostrar_index(request):
-    return render(request, 'index.html')
+    formulario = LoginForm(request.POST or None)
+    msg = ''
+    if formulario.is_valid():
+        usuario = formulario.cleaned_data['usuario']
+        senha = formulario.cleaned_data['senha']
+        user = Cadastro.objects.filter(usuario=usuario).last()
+        todos = Cadastro.objects.all()
+        usuario_logado = Cadastro.objects.filter(nome=user).first()
+        if not user or user.senha != senha:
+            msg = 'Usuário ou senha incorretos.'
+        else:
+            return render(request, 'octopus.html', {'user': user, 'usuario_logado': usuario_logado})
+
+    return render(request, 'index.html', {'form': formulario, 'msg': msg})
+
 
 def logout_user(request):
-    print(request.user)
     logout(request)
     return redirect('/')
-
-@csrf_protect
-def mostrar_octopus(request):
-    if request.method == "POST":
-        username = request.POST.get('username')
-        password = request.POST.get('password')
-        user = authenticate(username=username, password=password)
-        if user is not None:
-            login(request, user)
-            return redirect('/octopus/user')
-        else:
-            messages.error(request, 'Usuário ou Senha Inválidos')
-            return redirect('/')
-    return HttpResponse('')
-
-@login_required(login_url='/')
-def mostrar_octopus_logado(request):
-    nomes = Cadastro.objects.all()
-    return render(request, 'octopus.html', {'nomes': nomes})
