@@ -25,6 +25,34 @@
             <a href=""><img src="{% static 'icones/linkedin.png' %}" alt=""></a>
         </div>
     </footer>
-<button id="btn-chat"><img src="{% static 'icones/octopus2.png' %}" alt="" id="img-chat"></button>
+
+<div id="div-chat">
+        <img src="{% static 'icones/octopus2.png' %}" alt="" id="img-chat">
+</div>
+<script type="text/javascript" defer>
+    let divChat = document.querySelector("#div-chat");
+    let imgChat = document.querySelector("#img-chat");
+
+    divChat.addEventListener("click", ()=>{
+        divChat.innerHTML = `
+        <div id="box-chat">
+            <img src="{% static 'imagens/janelaChatbot.gif' %}" alt="" id="img-chataberto">
+        </div>
+    
+        `
+        divChat.style.borderRadius = "0";
+        divChat.style.background = "none";
+        divChat.style.bottom = "0";
+        divChat.style.height = "auto";
+        divChat.style.width = "auto";
+        let divBox = document.querySelector("#box-chat");
+
+        divChat.addEventListener("click", ()=>{
+        window.location.reload()
+    })
+
+    })
+    
+</script>
 </body>
 </html>
