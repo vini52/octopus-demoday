@@ -88,7 +88,9 @@ header a:hover {
     display: flex;
     justify-content: center;
     color: white;
-    font-size: 12pt;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 15pt;
+    margin: 0;
     text-align: justify;
     width: 100%;
 }
@@ -138,6 +140,7 @@ header a:hover {
 #txt-projeto{
     text-align: initial;
     width: 60%;
+    text-align: justify;
 }
 #txt-projeto h2{
     color: #ffbf37;
