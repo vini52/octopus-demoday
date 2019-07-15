@@ -118,10 +118,11 @@ header a:hover {
     background-color: rgb(255, 214, 34);
     display: flex;
     justify-content: center;
+    width: 380px;
 }
 #txt-projeto{
     text-align: initial;
-    width: 60%;
+    width: 58%;
 }
 #txt-projeto h2{
     color: #ffbf37;
