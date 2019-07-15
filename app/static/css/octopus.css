@@ -318,19 +318,34 @@ footer{
 #sociais img{
     width: 40px;
 }
-#btn-chat{
+#div-chat{
+    align-items: center;
     background-color: #2674A8;
-    border: none;
     border-radius: 100%;
     bottom: 30px;
     cursor: pointer;
+    display: flex;
     height: 60px;
+    justify-content: center;
     position: fixed;
     right: 30px;
     width: 60px;
 }
-#btn-chat img{
-    width: 50px;
+#div-chat img{
+    width: 45px;
+}
+#img-chataberto{
+    bottom: 0;
+    width: 300px;
+}
+#box-chat{
+    bottom: 0;
+    right: 0;
+}
+#box-chat img{
+    bottom: 0;
+    right: 0;
+    width: 300px;
 }
 ::-webkit-scrollbar{
     background-color: #ffbf37;
