@@ -318,6 +318,20 @@ footer{
 #sociais img{
     width: 40px;
 }
+#btn-chat{
+    background-color: #2674A8;
+    border: none;
+    border-radius: 100%;
+    bottom: 30px;
+    cursor: pointer;
+    height: 60px;
+    position: fixed;
+    right: 30px;
+    width: 60px;
+}
+#btn-chat img{
+    width: 50px;
+}
 ::-webkit-scrollbar{
     background-color: #ffbf37;
     width: 8px;

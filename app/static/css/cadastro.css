@@ -1,7 +1,7 @@
 body{
     display: grid;
     grid-template-areas: 'nav' 'form' 'footer';
-    grid-template-rows: 10vh 70vh 30vh;
+    grid-template-rows: 10vh 90vh 30vh;
     margin: 0;
 }
 nav{
@@ -22,8 +22,13 @@ section{
 #formulario{
     align-items: center;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-evenly;
     width: 80%;
+}
+#formulario h1{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 22pt;
 }
 ::-webkit-input-placeholder  { 
     color: white; 
@@ -89,6 +94,20 @@ footer{
 }
 #sociais img{
     width: 40px;
+}
+#btn-chat{
+    background-color: #2674A8;
+    border: none;
+    border-radius: 100%;
+    bottom: 30px;
+    cursor: pointer;
+    height: 60px;
+    position: fixed;
+    right: 30px;
+    width: 60px;
+}
+#btn-chat img{
+    width: 50px;
 }
 ::-webkit-scrollbar{
     background-color: #ffbf37;
