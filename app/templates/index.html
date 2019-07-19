@@ -10,7 +10,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="shortcut icon" href="{% static 'icones/octopus.png' %}" type="image/x-icon">
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
-    <script defer src="{% static 'js/script.js' %}"></script>
+    <link rel="stylesheet" href="{% static 'css/responsividade.css' %}">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script type="text/javascript">
@@ -117,9 +117,9 @@
         </div>
         
         <div class="or">
-            <img src="{% static 'imagens/or.png' %}" alt="">
+            <img src="{% static 'imagens/or.png' %}" alt="" id="img-or">
         </div>
-        
+    
         <div class="direita">
             <div id="form-login">
                 <form action="/", method="POST">

@@ -9,7 +9,7 @@ body{
                         'cadastro cadastro cadastro cadastro'
                         'pilares pilares pilares pilares'
                         'footer footer footer footer';
-    grid-template-rows:  100vh 100vh 100vh 100vh 30vh; 
+    grid-template-rows:  100vh 100vh 100vh 100vh 30vh;
     margin: 0;
 }
 
@@ -137,6 +137,10 @@ header a:hover {
     display: flex;
     justify-content: center;
     width: 380px;
+}
+#largura-projeto p{
+    font-size: 20pt;
+    width: 100%;
 }
 #txt-projeto{
     text-align: initial;
@@ -408,7 +412,6 @@ footer{
     color: white;
     display: flex;
     font-family: 'Ubuntu', sans-serif;
-    /* font-weight: bold; */
     grid-area: footer;
     justify-content: space-around;
 }

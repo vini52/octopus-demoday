@@ -1,0 +1,133 @@
+@media(max-width:1024px){
+    #txt-projeto{
+        width: 50%;
+    }
+    #imgs-passo-a-passo img{
+        width: 80px;
+    }
+}
+@media(max-width:768px){
+    body{
+        grid-template-rows:  100vh 90vh 100vh 200vh 30vh;
+    }
+    #container-header{
+        width: 55%;
+    }
+    #largura-projeto p{
+        font-size: 12pt;
+    }
+    #img-projeto{
+        width: 300px;
+    }
+    #img-projeto img{
+        width: 99%;
+    }
+    #imgs-passo-a-passo aside{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .pilares{
+        grid-template-columns: 1fr 1fr;
+    }
+    #sociais{
+        flex-direction: column;
+        width: 40px;
+    }
+    #div-chat{
+        height: 40px;
+        width: 40px;
+    }
+    #div-chat img{
+        width: 30px;
+    }
+}
+@media(max-width:425px){
+    body{
+        grid-template-rows:  100vh 150vh 85vh 400vh 120vh;
+    }
+    .logo{
+        width: 45%;
+    }
+    .menu{
+        width: 75%;
+    }
+    .menu a{
+        font-size: 10pt;
+    }
+    #container-header{
+        width: 80%;
+    }
+    #largura-projeto{
+        grid-template-rows: 5% 94%;
+        width: 95%;
+    }
+    #largura-projeto p{
+        font-size: 12pt;
+        width: 96%;
+    }
+    #como-funciona-projeto{
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    #img-projeto{
+        width: 100%;
+    }
+    #txt-projeto{
+        width: 100%;
+    }
+    #imgs-passo-a-passo{
+        width: 96%;
+    }
+    #imgs-passo-a-passo img{
+        width: 50px;
+    }
+    #imgs-passo-a-passo aside{
+        width: 70px;
+    }
+    #imgs-passo-a-passo aside h3{
+        font-size: 10pt;
+    }
+    #img-input{
+        height: 32px;
+    }
+    #cadastro{
+        grid-template-rows: 8vh 4vh 70vh;
+    }
+    .input-entrar{
+        height: 30px;
+        width: 375px;
+    }
+    .template1{
+        flex-direction: column;
+    }
+    .esquerda{
+        width: 100%;
+    }
+    .or{
+        display: none;
+    }
+    .direita{
+        width: 100%;
+    }
+    .pilares{
+        grid-template-columns: 1fr;
+    }
+    #largura-pilares{
+        grid-template-rows: 5% 90%;
+    }
+    footer{
+        flex-direction: column;
+    }
+    #endereco, #contato, #atendimento{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    #sociais{
+        flex-direction: row;
+        width: 60%;
+    }
+}
