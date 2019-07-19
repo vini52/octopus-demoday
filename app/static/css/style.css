@@ -139,7 +139,7 @@ header a:hover {
     width: 380px;
 }
 #largura-projeto p{
-    font-size: 20pt;
+    font-size: 18pt;
     width: 100%;
 }
 #txt-projeto{
@@ -149,6 +149,7 @@ header a:hover {
 }
 #txt-projeto h2{
     color: #ffbf37;
+    font-size: 24pt;
     margin: 0;
 }
 #imgs-passo-a-passo{
