@@ -57,7 +57,7 @@
         font-size: 10pt;
     }
     #container-header{
-        width: 80%;
+        width: 100%;
     }
     #largura-projeto{
         grid-template-rows: 5% 94%;
@@ -97,7 +97,7 @@
     }
     .input-entrar{
         height: 30px;
-        width: 375px;
+        width: 350px;
     }
     .template1{
         flex-direction: column;
@@ -132,8 +132,17 @@
     }
 }
 @media(max-width:375px){
+    .menu{
+        width: 80%;
+    }
     .input-entrar{
         height: 30px;
         width: 290px;
+    }
+}
+@media(max-width:320px){
+    .input-entrar{
+        height: 30px;
+        width: 250px;
     }
 }
