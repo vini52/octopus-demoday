@@ -131,3 +131,9 @@
         width: 60%;
     }
 }
+@media(max-width:375px){
+    .input-entrar{
+        height: 30px;
+        width: 290px;
+    }
+}
