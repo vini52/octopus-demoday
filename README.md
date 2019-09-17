@@ -1,7 +1,7 @@
 # Octopus
 
 <ul>
-<li target="_blank" http://projeto-octopus.herokuapp.com/ > Acessar </li>
+<a target="_blank" href="http://projeto-octopus.herokuapp.com/"> Acessar </a>
 </ul>
 <br />
 <br />
